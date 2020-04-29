@@ -5,7 +5,12 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Dashboard
+                        <!-- Logout -->
+                        <div class="logout">
+                            <button class="logoutbtn"><a href="{{url('logout')}}"><i class="fa fa-power-off"></i>Logout</a></button>
+                        </div>
+                </div>
 
                 <div class="card-body">
                     @if (session('status'))
